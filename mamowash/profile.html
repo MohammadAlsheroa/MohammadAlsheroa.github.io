@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&family=Poppins&family=Tajawal&family=Ubuntu&display=swap" rel="stylesheet">
+    <script defer src="/mamowash/app.js"></script>
+
 </head>
 <body>
     <!-- CONTENT DIV -->
@@ -62,8 +64,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="" class="customer-button">New Customer</a>
-                            <a href="" class="customer-button">Customer List</a>
+                            <a href="#" class="customer-button" id="modalBtnNewCustomer">New Customer</a>
+                            <a href="#" class="customer-button" id="modalBtnListCustomer">Customer List</a>
                         </td>
                     </tr>
                 </table>
@@ -72,5 +74,156 @@
             </div>
         </div>
     </div>
+
+    <!-- MODAL DIV - HIDDEN BY DEFAULT -->
+
+
+    <!-- MODAL CONTENT FOR NEW CUSTOMER -->
+    <div id="new-customer-modal" class="modal">
+    <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <br><br><br>
+        <div class="new-customer-table">
+            <table>
+                <tr>
+                    <td width="40%">
+                        Name
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="" id="" class="new-customer-input">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td >
+                        Car Emirate
+                    </td>
+                    <td colspan="2">
+                        <select name="" id="" class="new-customer-input-select">
+                            <option value="" selected>Select Emirate</option>
+                            <option value="">Abu Dhabi</option>
+                            <option value="">Dubai</option>
+                            <option value="">Sharjah</option>
+                            <option value="">Ajman</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Plate Category
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="" id="" class="new-customer-input">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        Plate Number
+                    </td>
+                    <td colspan="2">
+                        <input type="number" name="" id="" class="new-customer-input">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        Phone Number
+                    </td>
+                    <td width="5%">+971</td>
+                    <td>
+                        <input type="number" name="" id="" class="new-customer-input" maxlength="9" >
+                    </td>
+                </tr>
+            </table>
+            <a href="#" class="add-customer-btn">Add New Customer</a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- MODAL CONTENT FOR NEW CUSTOMER -->
+    <div id="list-customer-modal" class="modal">
+        <div class="modal-content" id="list-modal-content">
+            <span class="closeBtn">&times;</span>
+            <br><br><br>
+            <span class="customer-list-modal-header">Customer List</span>
+            <br>
+            <div class="list-customer-table">
+                <table>
+                    <tr>
+                        <th>SN</th>
+                        <th>Account No.</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>10001</td>
+                        <td>Mohammed</td>
+                        <td>050 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10002</td>
+                        <td>Ahmed</td>
+                        <td>050 789 1234</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>10003</td>
+                        <td>Fatima</td>
+                        <td>055 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>10004</td>
+                        <td>Sara</td>
+                        <td>050 234 5678</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>10005</td>
+                        <td>Omar</td>
+                        <td>056 789 1234</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>10006</td>
+                        <td>Aisha</td>
+                        <td>052 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>10007</td>
+                        <td>Tariq</td>
+                        <td>055 234 5678</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>10008</td>
+                        <td>Hassan</td>
+                        <td>050 345 6789</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10009</td>
+                        <td>Mai</td>
+                        <td>055 789 1234</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>10010</td>
+                        <td>Ibrahim</td>
+                        <td>052 234 5678</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        </div>
+
 </body>
 </html>

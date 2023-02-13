@@ -7,12 +7,14 @@
     <title>MamoWash</title>
 
     <!-- LINK TO CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/mamowash/style.css">
 
     <!-- FONT FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&family=Poppins&family=Tajawal&family=Ubuntu&display=swap" rel="stylesheet">
+    <script defer src="/mamowash/app.js"></script>
+
 </head>
 <body>
     <!-- TOP MENU -->
@@ -46,16 +48,16 @@
                     <td rowspan="2" width="25%">
                         AD 12 61231
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: 12 Feb 2023
+                    <td class="td-left">
+                       🟢: 12 Feb 2023	
                     </td>
                     <td>
                         <input type="checkbox" checked>
@@ -73,16 +75,16 @@
                     <td rowspan="2" width="25%">
                         DXB C 5667
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: Not Yet
+                    <td class="td-left">
+                       🔴: Not Yet	
                     </td>
                     <td>
                         <input type="checkbox" >
@@ -100,16 +102,16 @@
                     <td rowspan="2" width="25%">
                         AD 12 61231
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: 12 Feb 2023
+                    <td class="td-left">
+                       🟢: 12 Feb 2023	
                     </td>
                     <td>
                         <input type="checkbox" checked>
@@ -127,16 +129,16 @@
                     <td rowspan="2" width="25%">
                         DXB C 5667
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: Not Yet
+                    <td class="td-left">
+                       🔴: Not Yet	
                     </td>
                     <td>
                         <input type="checkbox" >
@@ -154,16 +156,16 @@
                     <td rowspan="2" width="25%">
                         AD 12 61231
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: 12 Feb 2023
+                    <td class="td-left">
+                       🟢: 12 Feb 2023	
                     </td>
                     <td>
                         <input type="checkbox" checked>
@@ -181,16 +183,16 @@
                     <td rowspan="2" width="25%">
                         DXB C 5667
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: Not Yet
+                    <td class="td-left">
+                       🔴: Not Yet	
                     </td>
                     <td>
                         <input type="checkbox" >
@@ -208,16 +210,16 @@
                     <td rowspan="2" width="25%">
                         AD 12 61231
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: 12 Feb 2023
+                    <td class="td-left">
+                       🟢: 12 Feb 2023	
                     </td>
                     <td>
                         <input type="checkbox" checked>
@@ -235,16 +237,16 @@
                     <td rowspan="2" width="25%">
                         DXB C 5667
                     </td>
-                    <td width="50%">
-                        Wash: 09 Feb 2023
+                    <td width="50%" class="td-left">
+                        🚿: 09 Feb 2023
                     </td>
                     <td width="25%">
                         AED 15
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                       Paid: Not Yet
+                    <td class="td-left">
+                       🔴: Not Yet	
                     </td>
                     <td>
                         <input type="checkbox" >
@@ -259,7 +261,58 @@
 
     <!-- FOOTER -->
     <div class="footer">
-        <a href="#" class="footer-button">Add Record</a>
+        <a href="#" class="footer-button" id="open-modal-btn">Add Record</a>
     </div>
+
+    <!-- SLIDE UP MODAL -->
+    <div id="myModal" class="my-modal">
+    <div class="modal-content-wrapper">
+        <span class="close-modal-btn">&times;</span>
+        <br><br><br>
+        <div class="add-record-table">
+            <table>
+                <tr>
+                    <td width="25%">Account Number</td>
+                    <td colspan="3">
+                        <select name="" id="" class="add-record-select">
+                            <option value="">Select Account</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="25%" rowspan="3">Plate Number</td>
+                    <td colspan="3">
+                        <select name="" id="" class="add-record-select">
+                            <option value="">Select Emirate</option>
+                        </select>
+                    </td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" placeholder="Category" class="add-record-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="number" placeholder="Number" class="add-record-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amount</td>
+                    <td colspan="3"><input type="number" name="" id="" placeholder="AED"class="add-record-input"></td>
+                </tr>
+                <tr>
+                    <td>Wash</td><td><input type="date" name="" id=""></td>
+                    <td>💲</td><td><input type="date" name="" id=""></td>
+                </tr>
+            </table>
+            <a href="#" class="add-record-form-btn">Add Record</a>
+        </div>
+    </div>
+    </div>
+
 </body>
 </html>
