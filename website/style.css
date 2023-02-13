@@ -1,0 +1,162 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.image
+{
+    height: 50vh;
+    background: url(./images/image1.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: black;
+    color: transparent;
+    background-position: center;
+    transition: 1s;
+}
+
+
+#image-table
+{
+    width: 100%;
+    height: 100%;
+}
+
+#image-table td,th
+{
+    text-align: center;
+}
+
+.name
+{
+    font-size: 55px;
+
+    
+}
+
+.image:hover
+{
+    color: limegreen;
+}
+
+/* Student*/
+
+.student,.Freelance
+{
+    text-align: center;
+    color: limegreen;
+    background-color: black;
+}
+
+.student img
+{
+    width: 20vw;
+    margin: 20px;
+}
+
+.student h1, .Freelance h1, .contact-me h1
+{
+    font-size: 50px;
+}
+
+.student p, .Freelance p
+{
+    margin-left: 50px;
+    display: flex;
+    list-style-type:none;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+/* menu nav */
+ul
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+    list-style: none;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+li
+{
+    float: left;
+}
+
+li a:hover
+{
+    color: limegreen;
+}
+
+.active
+{
+    color: limegreen;
+    font-weight: bold;
+}
+
+.progress-bar {
+	position: relative;
+	width: 500px;
+	height: 3em;
+	background-color: limegreen;
+	border-radius: 1.5em;
+	color: white;
+}
+
+.progress-bar::before {
+	content: attr(data-label);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	bottom: .5em;
+	width: calc(var(--width,0)*1%);
+	min-width: 2rem;
+	max-width: calc(100% - 1em);
+	background-color: black;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+.freelance-table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-me , .contact-me p
+{
+    text-align: center;
+}
+
+.contact-me p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-me img
+{
+    width: 60px;
+}
